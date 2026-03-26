@@ -39,9 +39,10 @@ export const Hero: React.FC = () => {
                             </button>
                             <a 
                                 href="#sobre" 
-                                className="px-8 py-4 rounded-full text-green-600 border border-green-600/20 hover:bg-green-50 transition font-medium text-center flex items-center justify-center"
+                                className="px-8 py-4 rounded-full text-green-600 border border-green-600/20 hover:bg-green-50 transition font-medium text-center flex items-center justify-center gap-2"
                             >
-                                Conhecer o Núcleo
+                                <span>Conhecer o Núcleo</span>
+                                <WhatsAppIcon className="w-5 h-5" />
                             </a>
                         </div>
                     </div>

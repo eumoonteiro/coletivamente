@@ -1,5 +1,5 @@
-import React from 'react';
 import { Eye, Star, Clock, Lock, MapPin, Award } from 'lucide-react';
+import { WhatsAppIcon } from './Icons';
 
 export const Features: React.FC = () => {
     return (
@@ -41,6 +41,7 @@ export const Features: React.FC = () => {
                             className="bg-green-600 text-white px-10 py-4 rounded-full hover:bg-green-700 transition shadow-xl shadow-green-900/10 font-bold text-lg inline-flex items-center gap-3 transform hover:-translate-y-1 active:translate-y-0"
                         >
                             <span>Iniciar atendimento</span>
+                            <WhatsAppIcon className="w-5 h-5" />
                         </button>
                     </div>
                 </div>

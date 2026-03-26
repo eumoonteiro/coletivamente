@@ -1,5 +1,6 @@
 import { LOGO_URL } from '../constants';
 import { Instagram, Facebook, Lock } from 'lucide-react';
+import { WhatsAppIcon } from './Icons';
 
 interface Props {
     onAdminClick: () => void;
@@ -20,9 +21,10 @@ export const Footer: React.FC<Props> = ({ onAdminClick }) => {
                             const element = document.getElementById('agendamento');
                             if (element) element.scrollIntoView({ behavior: 'smooth' });
                         }}
-                        className="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition font-medium flex items-center justify-center gap-2 mx-auto shadow-sm group"
+                        className="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition font-medium flex items-center justify-center gap-3 mx-auto shadow-sm group"
                     >
-                        Iniciar atendimento
+                        <span>Iniciar atendimento</span>
+                        <WhatsAppIcon className="w-5 h-5" />
                     </button>
                 </div>
             </section>

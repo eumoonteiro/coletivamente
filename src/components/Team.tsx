@@ -1,7 +1,6 @@
-
-import React from 'react';
 import { TEAM_DATA } from '../constants';
 import { CalendarCheck } from 'lucide-react';
+import { WhatsAppIcon } from './Icons';
 
 export const Team: React.FC = () => {
     const scrollToForm = () => {
@@ -29,8 +28,9 @@ export const Team: React.FC = () => {
                                     className="w-full h-full object-cover group-hover:grayscale transition duration-700" 
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-green-950/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
-                                    <span className="text-white font-medium text-xs border border-white/30 px-3 py-1 rounded-full backdrop-blur-md">
-                                        Agendar Atendimento
+                                    <span className="text-white font-medium text-xs border border-white/30 px-3 py-1 rounded-full backdrop-blur-md flex items-center gap-2">
+                                        <span>Agendar Atendimento</span>
+                                        <WhatsAppIcon className="w-3 h-3" />
                                     </span>
                                 </div>
                             </div>
@@ -81,6 +81,7 @@ export const Team: React.FC = () => {
                         className="bg-green-600 text-white px-10 py-4 rounded-full hover:bg-green-700 transition shadow-xl shadow-green-900/10 font-bold text-lg flex items-center gap-3 mx-auto transform hover:-translate-y-1 active:translate-y-0"
                     >
                         <span>Iniciar atendimento</span>
+                        <WhatsAppIcon className="w-5 h-5" />
                     </button>
                 </div>
             </div>
